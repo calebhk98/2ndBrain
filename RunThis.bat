@@ -19,6 +19,9 @@ if errorlevel 1 (
 
     echo Adding Python to the PATH.
     set "PATH=%PATH%;%localappdata%\Programs\Python\Python310\Scripts;%localappdata%\Programs\Python\Python310\"
+
+    start RunThis.bat
+    exit /b
 )
 
 if not exist "venv" (
